@@ -5,6 +5,7 @@ import Homepage from "./screens/Homepage";
 import RegisterPage from "./screens/RegisterPage";
 import Dashboard from "./screens/Dashboard";
 import ReviewPage from "./screens/ReviewPage";
+import UserListPage from "./screens/UserListPage"; 
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterPage} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Review" component={ReviewPage} />
+        <Stack.Screen name="UserList" component={UserListPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

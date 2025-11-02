@@ -8,7 +8,17 @@ export default function Homepage({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Register")}>
         <Text style={styles.buttonText}>Go to Register</Text>
       </TouchableOpacity>
+
+<TouchableOpacity
+  style={{ backgroundColor: "#2196F3", padding: 10, marginTop: 10, borderRadius: 5 }}
+  onPress={() => navigation.navigate("UserList")}
+>
+  <Text style={{ color: "#fff", fontWeight: "bold" }}>View Registered Users</Text>
+</TouchableOpacity>
+
+      
     </View>
+    
   );
 }
 
